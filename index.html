@@ -1,11 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Andrews Access | Access & Cleaning Services</title>
-
+<title>Andrews Access | Andrews Access Cleaning Services</title>
+<meta name="description" content="Andrews Access (access hire & working at height) and Andrews Access Cleaning Services (window, gutter, roof, jet washing & solar panel cleaning). Bradford & nationwide." />
 <style>
+    :root{
+      --bg:#0b1220; --card:#0f1a35; --muted:#a8b3c7; --text:#eef2ff;
+      --a:#4fd1c5; --b:#60a5fa; --border:rgba(255,255,255,.12);
+      --shadow:0 18px 60px rgba(0,0,0,.35); --r:18px; --max:1120px;
+    }
+    *{box-sizing:border-box}
 :root{
   --bg:#0b1220; --card:#0f1a35; --muted:#a8b3c7; --text:#eef2ff;
   --a:#4fd1c5; --b:#60a5fa; --border:rgba(255,255,255,.12);
@@ -14,131 +15,106 @@
 *{box-sizing:border-box}
 
 body{
-  margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  color:var(--text);
-  line-height:1.5;
-  background:
-    linear-gradient(rgba(11,18,32,.85), rgba(11,18,32,.85)),
+margin:0;
+@@ -21,65 +21,40 @@
+
+background:
+linear-gradient(rgba(11,18,32,0.85), rgba(11,18,32,0.85)),
+    url('/images/window-cleaning-bg.jpg') no-repeat center center fixed,
+    radial-gradient(900px 700px at 20% 0%, rgba(96,165,250,.25), transparent 60%),
+    radial-gradient(850px 650px at 85% 10%, rgba(79,209,197,.22), transparent 55%),
+    var(--bg);
+  background-size: cover;
     url('/images/window-cleaning-bg.jpg') no-repeat center center fixed;
   background-size:cover;
 }
 
-a{text-decoration:none;color:inherit}
+a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--max);margin:0 auto;padding:24px}
-.card{background:rgba(15,26,53,.75);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
-
 header{
   position:sticky;top:0;z-index:10;
   backdrop-filter:blur(10px);
-  background:rgba(11,18,32,.85);
+  background:linear-gradient(to bottom, rgba(11,18,32,.92), rgba(11,18,32,.62));
   border-bottom:1px solid var(--border);
 }
-.nav{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.nav{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .brand{display:flex;gap:12px;align-items:center;font-weight:900}
 .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--a),var(--b))}
-.links a{margin-left:14px;font-weight:800;color:var(--muted)}
+.links{display:flex;gap:14px;flex-wrap:wrap}
+.links a{color:var(--muted);font-weight:800;font-size:14px}
 .links a:hover{color:var(--text)}
-
-.btn{
-  padding:10px 14px;border-radius:14px;font-weight:900;
-  border:1px solid var(--border);background:rgba(255,255,255,.06)
-}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:14px;font-weight:900;font-size:14px;border:1px solid var(--border);background:rgba(255,255,255,.06)}
 .btn.primary{border:none;background:linear-gradient(135deg,var(--a),var(--b));color:#06101f}
-
-.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-@media(max-width:900px){.grid{grid-template-columns:1fr}}
-
-.heroImg{
-  height:320px;
-  border-radius:var(--r);
-  overflow:hidden;
-  border:1px solid var(--border);
-}
-.heroImg img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
+.card{background:rgba(15,26,53,.72);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
+.hero{padding:42px 0 10px}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+h1{margin:0 0 10px;font-size:40px;line-height:1.08}
+@media (max-width:520px){h1{font-size:32px}}
+h2{margin:0 0 10px;font-size:26px}
+.muted{color:var(--muted)}
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
-.gallery img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-  border-radius:16px;
-  border:1px solid var(--border);
-}
-
-footer{padding:30px 0;color:var(--muted);text-align:center;font-size:13px}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:16px;border:1px solid var(--border)}
+footer{border-top:1px solid var(--border);padding:22px 0 34px;color:var(--muted);font-size:13px}
 </style>
-</head>
 
+
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 700px at 20% 0%, rgba(96,165,250,.25), transparent 60%),
+        radial-gradient(850px 650px at 85% 10%, rgba(79,209,197,.22), transparent 55%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    header{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(10px);
+      background:linear-gradient(to bottom, rgba(11,18,32,.92), rgba(11,18,32,.62));
+      border-bottom:1px solid var(--border);
+    }
+    .nav{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:900}
+    .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--a),var(--b))}
+    .links{display:flex;gap:14px;flex-wrap:wrap}
+    .links a{color:var(--muted);font-weight:800;font-size:14px}
+    .links a:hover{color:var(--text)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:14px;font-weight:900;font-size:14px;border:1px solid var(--border);background:rgba(255,255,255,.06)}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{border:none;background:linear-gradient(135deg,var(--a),var(--b));color:#06101f}
+    .card{background:rgba(15,26,53,.72);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
+    .hero{padding:42px 0 10px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    h1{margin:0 0 10px;font-size:40px;line-height:1.08}
+    @media (max-width:520px){h1{font-size:32px}}
+    h2{margin:0 0 10px;font-size:26px}
+    .muted{color:var(--muted)}
+    .pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .pill{padding:10px 12px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);font-weight:900;font-size:13px}
+    .section{padding:18px 0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:900px){.split{grid-template-columns:1fr}}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width:900px){.services{grid-template-columns:1fr}}
+    .svc h3{margin:0 0 6px}
+    .icon{width:40px;height:40px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);border:1px solid var(--border);margin-bottom:10px;font-weight:900}
+    .heroImg{border-radius:var(--r);border:1px solid var(--border);overflow:hidden;min-height:220px;background:#050a14}
+    .heroImg img{width:100%;height:100%;object-fit:cover;display:block}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    @media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    .gallery img{width:100%;height:180px;object-fit:cover;border-radius:16px;border:1px solid var(--border);background:#050a14}
+    footer{border-top:1px solid var(--border);padding:22px 0 34px;color:var(--muted);font-size:13px}
+  </style>
+</head>
 <body>
 
-<header>
-  <div class="nav">
-    <div class="brand">
-      <div class="logo"></div>
-      Andrews Access
-    </div>
-    <div class="links">
-      <a href="#access">Access</a>
-      <a href="#cleaning">Cleaning</a>
-      <a href="#photos">Photos</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</header>
+@@ -324,3 +299,4 @@ <h2 style="margin-top:0">Email</h2>
 
-<main class="wrap">
 
-<section class="card">
-  <div class="grid">
-    <div>
-      <h1>Access hire & exterior cleaning</h1>
-      <p class="muted">Bradford & nationwide • Residential & commercial</p>
-      <a class="btn primary" href="tel:07522593151">Call Access</a>
-      <a class="btn" href="tel:07512966030">Call Cleaning</a>
-    </div>
-    <div class="heroImg">
-      <img src="images/job-01.jpg" alt="Access work">
-    </div>
-  </div>
-</section>
 
-<section id="access" class="card">
-  <h2>Andrews Access</h2>
-  <p class="muted">Operated access hire & working at height.</p>
-</section>
 
-<section id="cleaning" class="card">
-  <h2>Cleaning Services</h2>
-  <p class="muted">Window, gutter, roof, jet washing & solar panels.</p>
-</section>
-
-<section id="photos" class="card">
-  <h2>Recent jobs</h2>
-  <div class="gallery">
-    <img src="images/job-01.jpg">
-    <img src="images/job-02.jpg">
-    <img src="images/job-03.jpg">
-    <img src="images/job-04.jpg">
-  </div>
-</section>
-
-<section id="contact" class="card">
-  <h2>Contact</h2>
-  <p>Access: 01274 966 565</p>
-  <p>Cleaning: 07512 966030</p>
-  <p>Email: brettandrews@andrewsaccess.com</p>
-</section>
-
-<footer>
-  © Andrews Access
-</footer>
-
-</main>
-</body>
-</html>
