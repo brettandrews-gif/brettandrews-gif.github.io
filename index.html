@@ -22,16 +22,29 @@
 }
 
     :root{
-      --bg:#0b1220; --card:#0f1a35; --muted:#a8b3c7; --text:#eef2ff;
-      --a:#4fd1c5; --b:#60a5fa; --border:rgba(255,255,255,.12);
-      --shadow:0 18px 60px rgba(0,0,0,.35); --r:18px; --max:1120px; 
-    }
+  --bg:#0b1220;
+  --card:#0f1a35;
+  --text:#f1f5ff;
+  --muted:#b6c2d9;
+
+  --accent:#4fd1c5;   /* teal */
+  --accent2:#60a5fa;  /* blue */
+
+  --border:rgba(255,255,255,.12);
+  --shadow:0 18px 60px rgba(0,0,0,.35);
+  --r:18px;
+  --max:1120px;
+}
+
     *{box-sizing:border-box}
 
 body{
   margin:0;
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  body{
   color:var(--text);
+}
+
   line-height:1.5;
 
   background:
@@ -65,7 +78,12 @@ body{
     .links a:hover{color:var(--text)}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:14px;font-weight:900;font-size:14px;border:1px solid var(--border);background:rgba(255,255,255,.06)}
     .btn:hover{transform:translateY(-1px)}
-    .btn.primary{border:none;background:linear-gradient(135deg,var(--a),var(--b));color:#06101f}
+    .btn.primary{
+  border:none;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#06101f;
+    }
+
     .card{background:rgba(15,26,53,.72);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
     .hero{padding:42px 0 10px}
     .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}
@@ -336,6 +354,7 @@ body{
 </div>
 
 </html>
+
 
 
 
