@@ -70,10 +70,17 @@ body{
       background:linear-gradient(to bottom, rgba(11,18,32,.92), rgba(11,18,32,.62));
       border-bottom:1px solid var(--border);
     }
-    .nav{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .nav{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}
     .brand{display:flex;gap:12px;align-items:center;font-weight:900}
     .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--a),var(--b))}
-    .links{display:flex;gap:14px;flex-wrap:wrap}
+    .links{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:center;
+  width:100%;
+}
+
     .links a{color:var(--muted);font-weight:800;font-size:14px}
     .links a:hover{color:var(--text)}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:14px;font-weight:900;font-size:14px;border:1px solid var(--border);background:rgba(255,255,255,.06)}
@@ -357,6 +364,7 @@ body{
 </div>
 
 </html>
+
 
 
 
