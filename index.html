@@ -10,7 +10,23 @@
   align-items:center;
   gap:12px;
   flex-wrap:nowrap;
+} /* Fix link & phone number colours */
+a{
+  color:#f1f5ff;
+  text-decoration:none;
 }
+a:hover{
+  color:#4fd1c5;
+}
+body{
+  color:#f1f5ff;
+}
+
+/* Make phone numbers stand out without bright blue */
+a[href^="tel"]{
+  font-weight:900;
+}
+
 .logoRow img{
   height:42px;
   width:auto;
@@ -378,6 +394,7 @@ body{
 </div>
 
 </html>
+
 
 
 
