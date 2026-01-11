@@ -5,7 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>Andrews Access | Andrews Access Cleaning Services</title>
   <meta name="description" content="Andrews Access (access hire & working at height) and Andrews Access Cleaning Services (window, gutter, roof, jet washing & solar panel cleaning). Bradford & nationwide." />
-  <style>
+  <style>.logoRow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:nowrap;
+}
+.logoRow img{
+  height:42px;
+  width:auto;
+  border-radius:6px;
+  display:block;
+}
+@media (max-width:520px){
+  .logoRow img{height:34px;}
+}
+
     :root{
       --bg:#0b1220; --card:#0f1a35; --muted:#a8b3c7; --text:#eef2ff;
       --a:#4fd1c5; --b:#60a5fa; --border:rgba(255,255,255,.12);
@@ -80,14 +95,11 @@ body{
 
 <header>
   <div class="nav">
-    <div class="brand" style="display:flex;align-items:center;gap:12px">
-  <img src="images/logo-access.jpg"
-       alt="Andrews Access"
-       style="height:42px;width:auto;border-radius:6px">
-
-  <img src="images/logo-cleaning.jpg"
-       alt="Andrews Access Cleaning Services"
-       style="height:42px;width:auto;border-radius:6px">
+    <div class="brand">
+  <div class="logoRow">
+    <img src="images/logo-access.jpg" alt="Andrews Access">
+    <img src="images/logo-cleaning.jpg" alt="Andrews Access Cleaning Services">
+  </div>
 </div>
 
       <div class="logo" aria-hidden="true"></div>
@@ -324,6 +336,7 @@ body{
 </div>
 
 </html>
+
 
 
 
